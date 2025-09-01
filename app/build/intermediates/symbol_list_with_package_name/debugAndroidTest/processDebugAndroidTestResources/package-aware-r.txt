@@ -1,0 +1,3 @@
+com.example.lab_week_02_c.test
+style WhiteBackgroundDialogTheme
+style WhiteBackgroundTheme

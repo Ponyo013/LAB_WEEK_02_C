@@ -1,0 +1,23 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+id button_single_top
+id button_standard
+id layout_single_top
+id layout_standard
+id main
+layout activity_main
+layout activity_single_top
+layout activity_standard
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+string single_top_button
+string standard_button
+style Base.Theme.LAB_WEEK_02_C
+style Theme.LAB_WEEK_02_C
+xml backup_rules
+xml data_extraction_rules
