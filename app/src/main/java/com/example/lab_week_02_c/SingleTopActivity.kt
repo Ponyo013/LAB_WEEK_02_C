@@ -1,12 +1,19 @@
 package com.example.lab_week_02_c
 
+import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import android.widget.*
 
 class SingleTopActivity : AppCompatActivity() {
+    companion object{
+        private const val DEBUG = "DEBUG"
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -16,5 +23,21 @@ class SingleTopActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        findViewById<Button>(R.id.button_single_top).setOnClickListener{
+            startActivity(
+                Intent(
+                    this,
+                    SingleTopActivity::class.java
+                )
+            )
+        }
+
     }
+
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+        Log.d(DEBUG, "onNewIntent")
+    }
+
 }
